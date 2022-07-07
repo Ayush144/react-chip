@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import Chips, { Chip } from '../../src'
 
 const data = [
-  'JavaScript',
-  'Ruby',
-  'Python',
-  'Java',
-  'Swift',
-  'C++',
-  'C',
-  'Objective C',
-  'Go'
+  'albert',
+  'Roy',
+  'Peter',
+  'Jack',
+  'Sarina',
+  'Cooper',
+  'Dine',
+  'Obaman',
+  'George'
 ];
 
 class BasicExample extends Component {
@@ -32,7 +32,7 @@ class BasicExample extends Component {
         value={this.state.value}
         onChange={this.onChange}
         createChipKeys={['a']}
-        placeholder="Type a Programming Language"
+        placeholder="Type a Name"
         suggestions={data}
         shouldRenderSuggestions={value => value.length >= 0}
         fromSuggestionsOnly={false} />
